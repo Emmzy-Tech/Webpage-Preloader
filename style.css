@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.wrapper{
+    background-color: #0b0227;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper .form-con{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    max-width: 400px;
+    padding: 30px;
+}
+.wrapper .form-con h1{
+    margin-bottom: 20px;
+    border-bottom: 6px solid #0b0227;
+    width: 15%;
+    padding-bottom: 5px;
+}
+.wrapper .form-con label{
+    margin-bottom: 5px;
+    color: #0b0227;
+    font-weight: bold;
+}
+.wrapper .form-con .form-control{
+    width: 100%;
+    border: 0;
+    outline: 0;
+    font-size: 1.1rem;
+    height: 40px;
+    padding-left: 10px;
+    margin-bottom: 15px;
+    background-color: #e2dff3;
+}
+.wrapper .form-con button{
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 20px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    background-color: #0b0227;
+    color: #fff;
+    cursor: pointer;
+}
+.loader-con{
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    position: absolute;
+    opacity: 1;
+    transition: all 5s ease;
+}
+.loader-con .loader{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    border: 15px solid grey;
+    border-top-color: #fff;
+    border-radius: 50%;
+    animation: spin .8s linear infinite;
+}
+@keyframes spin {
+    to{
+        transform: rotate(360deg);
+    }
+}
